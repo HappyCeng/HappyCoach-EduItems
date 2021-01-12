@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C678600F-225F-467C-AD95-7DF00710A4AB}</ProjectGuid>
+    <ProjectGuid>{043CC1C3-C960-46E5-B0DB-B034DEC6930E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GiveMeSound</RootNamespace>
-    <AssemblyName>GiveMeSound</AssemblyName>
+    <RootNamespace>ArrayListExample</RootNamespace>
+    <AssemblyName>ArrayListExample</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dock.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="Donkey.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
