@@ -8,6 +8,12 @@ namespace GiveMeSound
 {
     class Program
     {
+        
+        public static string RabbitName()
+        {
+            return "Tavşan";
+        }
+        
         static void Main(string[] args)
         {
             //OOP
@@ -22,6 +28,10 @@ namespace GiveMeSound
             Console.WriteLine("Cattan sonra : " + cat.animal_name);
             Console.WriteLine("Cattan sonra : " + animal.price.ToString());
             animal1.soundAnimal();
+
+            cat.color = "red";
+            Console.WriteLine("Cat Rengi : " + cat.color);
+            
 
             Animal animal2 = new Dog();
             Dog dog = new Dog();
@@ -53,6 +63,19 @@ namespace GiveMeSound
             donkey.setPrice(501);
             Console.WriteLine(donkey.getPrice());
 
+            //
+            Rabbit rabbit = new Rabbit();
+            rabbit.rabbitType = RabbitType.Beyaz;
+            Console.WriteLine(rabbit.rabbitType);
+
+            Console.WriteLine(RabbitName());
+
+            Shark shark = new Shark();
+            shark.soundAnimalAbs();
+
+            
         }
     }
+
+
 }
