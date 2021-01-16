@@ -8,6 +8,9 @@ namespace GiveMeSound
 {
     class Program
     {
+
+        //delegate method
+        delegate string DelegateMethod();
         
         public static string RabbitName()
         {
@@ -31,7 +34,6 @@ namespace GiveMeSound
 
             cat.color = "red";
             Console.WriteLine("Cat Rengi : " + cat.color);
-            
 
             Animal animal2 = new Dog();
             Dog dog = new Dog();
@@ -73,7 +75,13 @@ namespace GiveMeSound
             Shark shark = new Shark();
             shark.soundAnimalAbs();
 
-            
+            //Monkey
+            Monkey monkey = new Monkey("Maymun","Lemur");
+
+            //Delegate
+            DelegateMethod myDelegate = RabbitName;
+            Console.WriteLine(myDelegate());
+
         }
     }
 

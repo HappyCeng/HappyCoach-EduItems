@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListExample", "ArrayLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator.csproj", "{D87EDD39-A28F-4B21-B542-C9BC91922124}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWinFormApp", "FirstWinFormApp\FirstWinFormApp.csproj", "{50551D26-D559-4439-B315-034579E03B7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddListApp", "..\AddListApp\AddListApp.csproj", "{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{D87EDD39-A28F-4B21-B542-C9BC91922124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87EDD39-A28F-4B21-B542-C9BC91922124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87EDD39-A28F-4B21-B542-C9BC91922124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50551D26-D559-4439-B315-034579E03B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50551D26-D559-4439-B315-034579E03B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50551D26-D559-4439-B315-034579E03B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50551D26-D559-4439-B315-034579E03B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
