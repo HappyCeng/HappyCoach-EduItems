@@ -13,9 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListExample", "ArrayLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator.csproj", "{D87EDD39-A28F-4B21-B542-C9BC91922124}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWinFormApp", "FirstWinFormApp\FirstWinFormApp.csproj", "{50551D26-D559-4439-B315-034579E03B7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWinFormApp", "FirstWinFormApp\FirstWinFormApp.csproj", "{50551D26-D559-4439-B315-034579E03B7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddListApp", "..\AddListApp\AddListApp.csproj", "{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddListApp", "..\AddListApp\AddListApp.csproj", "{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{184EBD72-AD29-4C27-81AC-40E247641C94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormInTheForm", "..\FormInTheForm\FormInTheForm.csproj", "{04D3E057-6F67-4CD6-87BD-AE09B8B1D0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormApp", "..\FormApp\FormApp.csproj", "{48C40DC3-0B66-438A-9BAE-5DE6229AAC6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80C983A0-A1DC-40FA-BAE5-C3D2B680E466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184EBD72-AD29-4C27-81AC-40E247641C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184EBD72-AD29-4C27-81AC-40E247641C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184EBD72-AD29-4C27-81AC-40E247641C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184EBD72-AD29-4C27-81AC-40E247641C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D3E057-6F67-4CD6-87BD-AE09B8B1D0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D3E057-6F67-4CD6-87BD-AE09B8B1D0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D3E057-6F67-4CD6-87BD-AE09B8B1D0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D3E057-6F67-4CD6-87BD-AE09B8B1D0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C40DC3-0B66-438A-9BAE-5DE6229AAC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C40DC3-0B66-438A-9BAE-5DE6229AAC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C40DC3-0B66-438A-9BAE-5DE6229AAC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C40DC3-0B66-438A-9BAE-5DE6229AAC6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
