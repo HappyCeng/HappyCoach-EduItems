@@ -34,6 +34,7 @@ namespace FileProcess
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtUserPass = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,7 @@ namespace FileProcess
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(109, 20);
-            this.txtUserName.Name = "txtUserNeme";
+            this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(127, 23);
             this.txtUserName.TabIndex = 2;
             // 
@@ -73,17 +74,28 @@ namespace FileProcess
             // 
             this.btnLogin.Location = new System.Drawing.Point(22, 101);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(214, 68);
+            this.btnLogin.Size = new System.Drawing.Size(214, 41);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Giriş Yap";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Location = new System.Drawing.Point(22, 148);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(214, 33);
+            this.btnSignUp.TabIndex = 5;
+            this.btnSignUp.Text = "Üye Ol";
+            this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(257, 197);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtUserPass);
             this.Controls.Add(this.txtUserName);
@@ -104,5 +116,6 @@ namespace FileProcess
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtUserPass;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }

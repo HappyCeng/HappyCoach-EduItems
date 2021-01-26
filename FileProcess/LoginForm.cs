@@ -30,6 +30,7 @@ namespace FileProcess
         {
             string newLine = string.Empty, UserName = string.Empty, UserPass = string.Empty;
             string[] tmpArr = new string[2];
+            bool loginControl = false;
 
             if (txtUserName.Text == "" || txtUserPass.Text == "") 
             {
@@ -42,27 +43,32 @@ namespace FileProcess
                     try { 
                         StreamReader LoginFile = File.OpenText("E:\\StokApp\\login.txt");
                         newLine = LoginFile.ReadLine();
-                        tmpArr = newLine.Split('#');
-                        UserName = tmpArr[0];
-                        UserPass = tmpArr[1];
-
-                        if (txtUserName.Text == UserName && txtUserPass.Text == UserPass)
+                        while (newLine != null)
                         {
-                            UserInfo userInfo = new UserInfo();
-                            userInfo.UserName = UserName;
-                            userInfo.UserPassword = UserPass;
-                            userInfo.SessionControl(userInfo);
-                            if (userInfo.getSessionInfo())
+                            tmpArr = newLine.Split('#');
+                            UserName = tmpArr[0];
+                            UserPass = tmpArr[1];
+
+                            if (txtUserName.Text == UserName && txtUserPass.Text == UserPass)
                             {
-                                MainPage mainPage = new MainPage();
-                                mainPage.getUserInfo(userInfo);
-                                mainPage.Opacity = 1;
-                                mainPage.ShowInTaskbar = true;
-                                mainPage.Show();
-                                this.Dispose();
+                                UserInfo userInfo = new UserInfo();
+                                userInfo.UserName = UserName;
+                                userInfo.UserPassword = UserPass;
+                                userInfo.SessionControl(userInfo);
+                                if (userInfo.getSessionInfo())
+                                {
+                                    loginControl = true;
+                                    MainPage mainPage = new MainPage();
+                                    mainPage.getUserInfo(userInfo);
+                                    mainPage.Opacity = 1;
+                                    mainPage.ShowInTaskbar = true;
+                                    mainPage.Show();
+                                    this.Dispose();
+                                }
                             }
+                            newLine = LoginFile.ReadLine();
                         }
-                        else
+                        if (!loginControl)
                         {
                             MessageBox.Show("Kullanıcı bilgilerini kontrol ediniz.");
                         }
@@ -77,6 +83,12 @@ namespace FileProcess
                     MessageBox.Show("Lütfen geçerli bir kullanıcı adı giriniz.");
                 }
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp signUp = new SignUp();
+            signUp.Show();
         }
     }
 }

@@ -19,25 +19,26 @@ namespace FileProcess
 
         private void ProductListForm_Load(object sender, EventArgs e)
         {
+            //combobox dolduruyoruz.
             string row = string.Empty, tmpRow = string.Empty;
             int tmpIndex;
-            List<string> ProductList = new List<string>();
+            List<string> CategoryList = new List<string>();
             StreamReader fileProduct = File.OpenText("E:\\StokApp\\product.txt");
 
             row = fileProduct.ReadLine();
-            
+            //her kategoriden bir tane eklemek için
             while (row != null)
             {
                 tmpIndex = row.IndexOf("#");
                 tmpRow = row.Substring(0, tmpIndex);
-                if (!ProductList.Contains(tmpRow))
+                if (!CategoryList.Contains(tmpRow))
                 {
-                    ProductList.Add(tmpRow);
+                    CategoryList.Add(tmpRow);
                 }
                 row = fileProduct.ReadLine();
             }
 
-            cBoxCategories.Items.AddRange(ProductList.ToArray());
+            cBoxCategories.Items.AddRange(CategoryList.ToArray());
                        
         }
 
