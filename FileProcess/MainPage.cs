@@ -42,5 +42,19 @@ namespace FileProcess
             productListForm.MdiParent = this;
             productListForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddCategory addCategory = new AddCategory();
+            addCategory.MdiParent = this;
+            addCategory.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddProduct addProduct = new AddProduct();
+            addProduct.MdiParent = this;
+            addProduct.Show();
+        }
     }
 }
