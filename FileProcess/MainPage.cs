@@ -56,5 +56,12 @@ namespace FileProcess
             addProduct.MdiParent = this;
             addProduct.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EditDelProduct editDelProduct = new EditDelProduct();
+            editDelProduct.MdiParent = this;
+            editDelProduct.Show();
+        }
     }
 }

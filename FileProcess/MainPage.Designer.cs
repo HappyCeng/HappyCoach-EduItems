@@ -76,8 +76,9 @@ namespace FileProcess
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 38);
             this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
+            this.button4.Text = "Ürün Düzenle";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
